@@ -35,14 +35,14 @@ password is never transmitted. Instead:
 4. The browser searches the list locally for a match
 
 This k-anonymity model means your password cannot be intercepted or logged
-by the API — the same technique used by Google Chrome's Password Checkup
+by the API, the same technique used by Google Chrome's Password Checkup
 feature.
 
 ### Cryptographically secure random generation
 The password generator uses `crypto.getRandomValues()` (Web Crypto API)
 rather than `Math.random()`. `Math.random()` is a pseudo-random number
 generator that is predictable and unsuitable for security applications.
-`crypto.getRandomValues()` draws from the operating system's entropy pool —
+`crypto.getRandomValues()` draws from the operating system's entropy pool,
 the same source used in TLS key generation.
 
 ### Client-side only architecture
@@ -66,7 +66,7 @@ entirely in the user's browser, eliminating server-side data exposure risk.
 ```bash
 git clone https://github.com/YOUR-USERNAME/password-checker.git
 cd password-checker
-# Open index.html in your browser — no build step needed
+# Open index.html in your browser, no build step needed
 ```
 
 ---
