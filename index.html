@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Strength Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Password Strength Checker</h1>
+    <p class="subtitle">Check if your password is strong — and if it's been leaked.</p>
+
+    <div class="input-group">
+      <input type="password" id="passwordInput" placeholder="Enter a password..." autocomplete="off">
+      <button id="toggleBtn">Show</button>
+    </div>
+
+    <div class="strength-bar-wrap">
+      <div class="strength-bar" id="strengthBar"></div>
+    </div>
+    <p class="strength-label" id="strengthLabel">Enter a password to begin</p>
+
+    <ul class="tips" id="tipsList"></ul>
+
+    <button class="check-btn" id="hibpBtn">Check if leaked (HaveIBeenPwned)</button>
+    <p class="hibp-result" id="hibpResult"></p>
+
+    <hr>
+    <h2>Password Generator</h2>
+    <div class="gen-options">
+      <label>Length: <input type="number" id="genLength" value="16" min="8" max="64"></label>
+      <label><input type="checkbox" id="genSymbols" checked> Symbols</label>
+      <label><input type="checkbox" id="genNumbers" checked> Numbers</label>
+    </div>
+    <button class="gen-btn" id="generateBtn">Generate strong password</button>
+    <div class="generated-output" id="generatedOutput"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
