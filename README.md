@@ -3,7 +3,7 @@
 A client-side web app that evaluates password strength, checks for known data
 breaches, and generates cryptographically secure passwords.
 
-**Live demo:** https://YOUR-USERNAME.github.io/password-checker
+**Live demo:** https://Bharath2907.github.io/password-checker
 
 ---
 
